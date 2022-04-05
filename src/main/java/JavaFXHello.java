@@ -1,4 +1,5 @@
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.FlowPane;
@@ -8,6 +9,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.concurrent.Flow;
 
 public class JavaFXHello extends Application {
@@ -16,16 +18,10 @@ public class JavaFXHello extends Application {
     }
 
     @Override
-    public void start(Stage stage) {
-        String version = System.getProperty("javafx.version");
-        Label label1 = new Label("Panther Pharma");
-        Label label2 = new Label("Username:");
-        Label label3 = new Label("pasword:");
-        GridPane pane = new GridPane();
-        pane.add(label1,0,0);
-        pane.add(label2, 2,2);
-        pane.add(label3, 5,5);
-        Scene scene = new Scene(pane, 640, 480);
+    public void start(Stage stage) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui.fxml"));
+        Scene scene = loader.load();
+
         stage.setScene(scene);
         stage.show();
 
