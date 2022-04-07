@@ -12,7 +12,7 @@ public class GuiController {
     public Label label;
     public Label label2;
     public Button EKG;
-
+/*
     public void EKG(@NotNull Stage primaryStage) {
         Button button = new Button("Draw a graph");
         Polyline polyline = new Polyline();
@@ -38,7 +38,7 @@ public class GuiController {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-    /*public void buttonClicked(ActionEvent actionEvent) {
+    public void buttonClicked(ActionEvent actionEvent) {
         label.setText("Hurra!");
         Node source = (Node) actionEvent.getSource();/*
         Scene scene = source.getScene();

@@ -33,7 +33,6 @@
                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                               <children>
                                  <Button fx:id="EKG" layoutX="14.0" layoutY="281.0" mnemonicParsing="false" text="EKG" />
-                                 <Button><onMouseClicked>#buttonClickHandler</onMouseClicked>EKG</Button>
                               </children>
                          </AnchorPane>
                        </content>
